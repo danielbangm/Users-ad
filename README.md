@@ -59,7 +59,7 @@ After this, I am now able to log into Client-1 as a normal, non-administrative u
 
 -  Step 4: Create a bunch of additional
 
-I log into DC-1 as jane_admin, open the Powershell_ise as an administrator. 
+I log into DC-1 as jane_admin, open the Powershell_ise as an administrator. I create a new file and paste the contents of the <a href="https://github.com/danielbangm/Generate-names-Users-ad/edit/main/README.md">script</a> into it. When I run my script, I can observe the account being created
 
 
 
