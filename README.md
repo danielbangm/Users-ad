@@ -66,4 +66,6 @@ Now when I open Active Directory Users and Computers in _EMPLOYEES OU, I can see
 ![image](https://github.com/danielbangm/Users-ad/assets/22795502/e986a96c-ba49-4664-b8e0-f8747ec0f43a)
 
 Just to wrap this lab up, I will attempt to log into Client-1 using one of the users just created. I chose <b>babixi.fesuji</b>
+and YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS! I was able to log into Client-1,
+![image](https://github.com/danielbangm/Users-ad/assets/22795502/59ae7836-b999-4e34-8506-415096c7f858)
 
