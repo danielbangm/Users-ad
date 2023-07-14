@@ -40,4 +40,26 @@ Now I log out/close the Remote Desktop Connection to DC-1and log back in as <b>d
 
 -  Step 2: Join Client-1 to the Domain (daniel.com)
 
-First I am going to www.portal.azure.com and set Client-1's DNS settings to DC-1's Private IP address
+I go to www.portal.azure.com and make sure I change Client-1's DNS settings to the DC-1's Private IP addressv(10.0.0.4). To do this just go to Client-1 -> Networking. Then change it. After Changing the DNS IP address I make sure I restart the Virtual Machine in Azure in order to flush the DNS cache.
+![image](https://github.com/danielbangm/Users-ad/assets/22795502/23d2273e-d133-4345-bc7f-aa125cdb8fb6)
+
+I use Remote Desktop Connection to connect to Client-1 and right click on Windows then System -> Rename this PC (advanced) -> Change -> daniel.com  It forces me to restart the computer.
+![image](https://github.com/danielbangm/Users-ad/assets/22795502/8b940682-ba5c-4242-8130-04167ed0d093)
+![image](https://github.com/danielbangm/Users-ad/assets/22795502/e59aabbe-ee73-47e7-a242-54ab07b31109)
+
+I login to the Domain Controller via Remote Desktop to verify client-1 shows up in Active Directory Users and Computers inside the Computer container on the root of the domain.
+![image](https://github.com/danielbangm/Users-ad/assets/22795502/d5d92da7-5b1f-4221-9457-98f2831ae3e1)
+
+-  Step 3: Setup Remote Desktop for non-administrative Users on Client-1
+
+I use Remote Desktop Connection to connect to Client-1 and right click on Windows then System -> Remote Desktop -> Allow Users to Remote Connect to this PC (advanced). Then I add "Domain Users". 
+![image](https://github.com/danielbangm/Users-ad/assets/22795502/65e2d8c6-ffe2-4cca-893b-631ecdf56e97)
+
+After this, I am now able to log into Client-1 as a normal, non-administrative user.
+
+-  Step 4: Create a bunch of additional
+
+I log into DC-1 as jane_admin, open the Powershell_ise as an administrator. 
+
+
+
