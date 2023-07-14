@@ -60,6 +60,10 @@ After this, I am now able to log into Client-1 as a normal, non-administrative u
 -  Step 4: Create a bunch of additional
 
 I log into DC-1 as jane_admin, open the Powershell_ise as an administrator. I create a new file and paste the contents of the <a href="https://github.com/danielbangm/Generate-names-Users-ad/edit/main/README.md">script</a> into it. When I run my script, I can observe the account being created
+![image](https://github.com/danielbangm/Users-ad/assets/22795502/2c42c201-f520-412a-9224-4242c1db4068)
 
+Now when I open Active Directory Users and Computers in _EMPLOYEES OU, I can see a bunch of random users created
+![image](https://github.com/danielbangm/Users-ad/assets/22795502/e986a96c-ba49-4664-b8e0-f8747ec0f43a)
 
+Just to wrap this lab up, I will attempt to log into Client-1 using one of the users just created. I chose <b>babixi.fesuji</b>
 
